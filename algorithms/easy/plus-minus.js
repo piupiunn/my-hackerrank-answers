@@ -1,18 +1,28 @@
+{
+  https://www.hackerrank.com/challenges/plus-minus/problem?isFullScreen=true
+}
+
 function plusMinus(arr) {
-  let pos = 0;
-  let neg = 0;
-  let zero = 0;
-  let length = arr.length;
+  let length = arr.length
+  let positive = 0
+  let negative = 0
+  let zero = 0
 
   arr.forEach((number) => {
-    number > 0 ? pos++ : number < 0 ? neg++ : zero++;
-  });
+    number > 0 ? positive++
+      : number < 0 ? negative++
+        : zero++
+}) 
 
-  const p = (pos / length).toFixed(6);
-  const n = (neg / length).toFixed(6);
-  const z = (zero / length).toFixed(6);
+  const positiveRatio = (positive / length).toFixed(6)
+  const negativeRatio = (negative / length).toFixed(6)
+  const zeroRatio = (zero / length).toFixed(6)
 
-  console.log(p);
-  console.log(n);
-  console.log(z);
+console.log(positiveRatio)
+console.log(negativeRatio)
+console.log(zeroRatio)
+
 }
+
+
+

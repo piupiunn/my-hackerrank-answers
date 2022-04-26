@@ -8,6 +8,7 @@ function miniMaxSum(arr) {
   let max = sum - Math.min(...arr);
 
   console.log(min, max);
+
 }
 
 

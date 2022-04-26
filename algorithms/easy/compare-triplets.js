@@ -11,8 +11,29 @@ function compareTriplets(a, b) {
       : b[i] > a[i] ? bob++
         : ""
   })
+
   return [alice, bob]
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

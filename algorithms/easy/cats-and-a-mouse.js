@@ -8,7 +8,7 @@ position z for mouse C,
   
 
  function catAndMouse(x, y, z) {
-   return Math.abs(x - z) > (y - z) ? "Cat B"
+  return Math.abs(x - z) > (y - z) ? "Cat B"
      : Math.abs(y - z) > (x - z) ? "Cat A"
        : "Mouse C"
    
